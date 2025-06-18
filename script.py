@@ -10,7 +10,7 @@ ABOUT_TEXT = """
 ├ ʀᴀɴᴋ: ᴇsᴘᴀᴅᴀ ɴᴏ. 3 🏆
 ├ ʟᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>ᴘʏᴛʜᴏɴ</a>
 ├ ʟɪʙʀᴀʀʏ: <a href=https://docs.pyrogram.org>ᴘʏʀᴏɢʀᴀᴍ</a>
-└ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/mithun_naam_toh_suna_hoga>ᴍɪᴛʜᴜɴ</a>
+└ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/chihiro_assistant_bot>𝗖𝗵𝗶𝗵𝗶𝗿𝗼 𝗔𝘀𝗵𝗶𝘀𝘂𝘁𝗮𝗻𝘁𝗼</a>
 
 🛠️ _ᴇғғᴏʀᴛʟᴇssʟʏ ᴄʀᴀғᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ᴄᴀᴘᴛɪᴏɴs!_
 """
