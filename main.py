@@ -80,9 +80,9 @@ def determine_audio(movie_details):
     language = str(movie_details.get("Language", "")).lower()
     
     if "india" in country or "hindi" in language:
-        return "Hindi"
+        return "Hindi-English"
     if "hindi" in actors or "hindi" in plot:
-        return "Hindi"
+        return "Hindi-English"
     if "usa" in country or "uk" in country or "english" in language:
         return "Hindi-English"
     if "english" in actors or "english" in plot:
