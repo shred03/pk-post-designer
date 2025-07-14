@@ -129,7 +129,7 @@ def format_caption(movie, year, audio, language, genre, imdb_rating, runTime, ra
     caption = f""" {movie} ({year})
     
 » 𝗔𝘂𝗱𝗶𝗼: {audio} (Esub)
-» 𝗤𝘂𝗮𝗹𝗶𝘁𝘆: 480p | 720p | 1080p |
+» 𝗤𝘂𝗮𝗹𝗶𝘁𝘆: 480p | 720p | 1080p
 » 𝗚𝗲𝗻𝗿𝗲: {genre}
 » 𝗜𝗺𝗱𝗯 𝗥𝗮𝘁𝗶𝗻𝗴: {imdb_rating}/10
 » 𝗥𝘂𝗻𝘁𝗶𝗺𝗲: {formatted_runtime}
@@ -185,15 +185,12 @@ def format_series_caption(movie, year, audio, language, genre, imdb_rating, runT
  ‣ 𝗦𝗲𝗮𝘀𝗼𝗻: {totalSeason}
  ‣ 𝗘𝗽𝗶𝘀𝗼𝗱𝗲𝘀: 01-08
  ‣ 𝗜𝗠𝗗𝗯 𝗥𝗮𝘁𝗶𝗻𝗴𝘀: {imdb_rating}/10
- ‣ 𝗣𝗶𝘅𝗲𝗹𝘀: 480p, 720p, 1080p
+ ‣ 𝗣𝗶𝘅𝗲𝗹𝘀: 480p | 720p | 1080p
  ‣ 𝗔𝘂𝗱𝗶𝗼: {audio}
  ‣ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲: {formatted_runtime}
 ├──────────────────────
  ‣ 𝗚𝗲𝗻𝗿𝗲𝘀: {genre}
 ╰──────────────────────
-┌────────────────────────
-│{season_count}
-└────────────────────────
  ‣ @TeamXPirates
 > [𝗜𝗳 𝗬𝗼𝘂 𝗦𝗵𝗮𝗿𝗲 𝗢𝘂𝗿 𝗙𝗶𝗹𝗲𝘀 𝗪𝗶𝘁𝗵𝗼𝘂𝘁 𝗖𝗿𝗲𝗱𝗶𝘁, 𝗧𝗵𝗲𝗻 𝗬𝗼𝘂 𝗪𝗶𝗹𝗹 𝗯𝗲 𝗕𝗮𝗻𝗻𝗲𝗱]"""
 
@@ -771,13 +768,11 @@ async def process_title_selection(callback_query: CallbackQuery, tmdb_id: str, m
                 'movie_p': title_data.get('name', 'N/A'),
                 'year_p': title_data.get('first_air_date', 'N/A')[:4] if title_data.get('first_air_date') else 'N/A',
             }
-            additional_message = f"""`[PirecyKings3] S{{season}} E{{episode}} {series_data['movie_p']} ({series_data['year_p']}) @pirecykings3`
+            additional_message = f"""`[A14] S{{season}} E{{episode}} {series_data['movie_p']} ({series_data['year_p']}) @TeamXPirates`
+            
+`[PK] S{{season}} E{{episode}} {series_data['movie_p']} ({series_data['year_p']}) @TeamXPirates`
 
-`S01 English - Hindi [480p]`
-
-`S01 English - Hindi [720p]`
-
-`S01 English - Hindi [1080p]`"""
+` -n [S0][EP] {series_data['movie_p']} ({series_data['year_p']}) @TeamXPirates`"""
             
             caption = format_series_caption(
                 movie=title_data.get('name', 'N/A'),
