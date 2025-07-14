@@ -772,7 +772,7 @@ async def process_title_selection(callback_query: CallbackQuery, tmdb_id: str, m
             
 `[PK] S{{season}} E{{episode}} {series_data['movie_p']} ({series_data['year_p']}) @TeamXPirates`
 
-` -n [S0][EP] {series_data['movie_p']} ({series_data['year_p']}) @TeamXPirates`"""
+` -n [S0][EP] {series_data['movie_p']} ({series_data['year_p']}).mkv`"""
             
             caption = format_series_caption(
                 movie=title_data.get('name', 'N/A'),
